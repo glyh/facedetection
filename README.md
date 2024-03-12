@@ -1,0 +1,1 @@
+Binding to [libfacedetect](https://github.com/ShiqiYu/libfacedetection.git).
