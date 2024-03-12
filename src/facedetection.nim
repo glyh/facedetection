@@ -5,8 +5,6 @@ import math
 import stb_image/read as stbi
 import stb_image/write as stbw
 
-import futhark
-
 {.passC: "-I" & currentSourcePath().parentDir() .}
 
 {.compile: "facedetectcnn.cpp" .}
