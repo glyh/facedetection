@@ -11,7 +11,7 @@ import stb_image/write as stbw
 {.compile: "facedetectcnn-data.cpp" .}
 {.compile: "facedetectcnn-model.cpp" .}
 
-proc facedetect_cnn*(
+proc facedetect_cnn(
   result_buffer: ptr uint8, 
   rgb_image_data: ptr uint8, 
   width: cint, 
@@ -22,7 +22,7 @@ proc facedetect_cnn*(
   header: "facedetectcnn.h"
 .}
 
-template ptrMath*(body: untyped) =
+template ptrMath(body: untyped) =
   template `+`[T](p: ptr T, off: int): ptr T =
     cast[ptr type(p[])](cast[uint](p) + off * sizeof(p[]))
   
