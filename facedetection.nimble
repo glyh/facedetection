@@ -5,6 +5,7 @@ author        = "glyh"
 description   = "Binding to libfacedetect"
 license       = "MIT"
 srcDir        = "src"
+backend       = "cpp"
 
 
 # Dependencies
